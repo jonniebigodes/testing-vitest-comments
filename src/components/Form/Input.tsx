@@ -19,6 +19,10 @@ export interface InputProps
   type?: string;
 }
 
+/**
+ * Input component that renders a styled text input supporting standard HTML input attributes.
+ * */
+
 const Input = ({
   inverted = false,
   placeholder = '',

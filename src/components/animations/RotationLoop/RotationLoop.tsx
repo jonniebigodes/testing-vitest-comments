@@ -5,6 +5,10 @@ export type RotationLoopProps = {
   durationMs?: number;
 };
 
+/**
+ * RotationLoop component that displays a rounded square continuously spinning in an infinite loop.
+ * */
+
 export const RotationLoop = ({ durationMs = 3200 }: RotationLoopProps) => {
   const spinAnimation = keyframes`
     0% {

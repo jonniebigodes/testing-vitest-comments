@@ -45,6 +45,10 @@ const getSizeStyles = (size: "small" | "medium" | "large", t: Theme) => {
   return sizeMap[size];
 };
 
+/**
+ * Button component that renders a clickable, styleable button with configurable size and label.
+ * */
+
 const Button = ({
   backgroundColor,
   size = "medium",

@@ -7,6 +7,10 @@ export type ParallaxLayersProps = {
 
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 
+/**
+ * ParallaxLayers component that animates three overlapping layers back and forth along an axis to create a parallax effect.
+ * */
+
 export const ParallaxLayers = ({
   axis = "horizontal",
   durationMs = 5000,

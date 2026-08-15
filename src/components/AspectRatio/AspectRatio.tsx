@@ -12,6 +12,10 @@ export interface AspectRatioProps {
   children?: ReactNode;
 }
 
+/**
+ * AspectRatio component that constrains its content to a specified width-to-height ratio.
+ * */
+
 const AspectRatio = ({ ratio, children }: AspectRatioProps) => {
   return (
     <div

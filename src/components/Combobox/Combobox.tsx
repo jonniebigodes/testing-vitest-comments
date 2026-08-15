@@ -16,6 +16,10 @@ export interface ComboboxProps {
   label?: string;
 }
 
+/**
+ * Combobox component that combines a text input with a filterable dropdown list for selecting one or multiple options.
+ * */
+
 const Combobox = ({
   type = 'single',
   value,

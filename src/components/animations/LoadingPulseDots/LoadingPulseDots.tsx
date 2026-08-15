@@ -6,6 +6,10 @@ export type LoadingPulseDotsProps = {
   color?: string;
 };
 
+/**
+ * LoadingPulseDots component that renders a row of dots pulsing in sequence to indicate loading.
+ * */
+
 export const LoadingPulseDots = ({
   dotCount = 5,
   cycleMs = 1400,

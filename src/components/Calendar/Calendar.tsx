@@ -82,6 +82,10 @@ const toComparable = (date: DateValue | undefined) =>
 const sameDay = (a: DateValue, b: DateValue) =>
   a.year === b.year && a.month === b.month && a.day === b.day;
 
+/**
+ * Calendar component that renders a month grid for selecting a single date or multiple dates.
+ * */
+
 export default function Calendar({
   type = 'single',
   value,

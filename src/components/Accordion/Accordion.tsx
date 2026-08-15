@@ -1,5 +1,5 @@
-import { useTheme } from '@emotion/react';
-import { useId, useState } from 'react';
+import { useTheme } from "@emotion/react";
+import { useId, useState } from "react";
 
 export interface AccordionItem {
   title: string;
@@ -10,6 +10,10 @@ export interface AccordionProps {
   inverted?: boolean;
   items: AccordionItem[];
 }
+
+/**
+ * Accordion component that displays a list of items that can be expanded or collapsed.
+ * */
 
 export default function AccordionComponent({
   inverted = false,
@@ -23,25 +27,23 @@ export default function AccordionComponent({
   const hoverBackgroundColor = inverted ? t.color.slate800 : t.color.slate50;
 
   const [openItems, setOpenItems] = useState<string[]>(
-    items.length > 0 ? ['item-0'] : [],
+    items.length > 0 ? ["item-0"] : [],
   );
 
   const toggleItem = (value: string) => {
     setOpenItems((prev) =>
-      prev.includes(value)
-        ? prev.filter((v) => v !== value)
-        : [...prev, value],
+      prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value],
     );
   };
 
   return (
     <div
       css={{
-        width: '100%',
+        width: "100%",
         backgroundColor,
         color: textColor,
         borderRadius: t.spacing[2],
-        overflow: 'hidden',
+        overflow: "hidden",
         border: `1px solid ${borderColor}`,
       }}
     >
@@ -52,10 +54,7 @@ export default function AccordionComponent({
         const contentId = `${baseId}-content-${index}`;
 
         return (
-          <div
-            key={index}
-            css={{ borderBottom: `1px solid ${borderColor}` }}
-          >
+          <div key={index} css={{ borderBottom: `1px solid ${borderColor}` }}>
             <button
               type="button"
               id={triggerId}
@@ -63,27 +62,27 @@ export default function AccordionComponent({
               aria-controls={contentId}
               onClick={() => toggleItem(value)}
               css={{
-                width: '100%',
+                width: "100%",
                 padding: `${t.spacing[4]} ${t.spacing[5]}`,
                 backgroundColor,
                 color: textColor,
-                border: 'none',
-                textAlign: 'left',
+                border: "none",
+                textAlign: "left",
                 fontSize: t.fontSize[16],
                 fontWeight: t.fontWeight.medium,
-                cursor: 'pointer',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                transition: 'background-color 0.2s ease',
-                '&:hover': { backgroundColor: hoverBackgroundColor },
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                transition: "background-color 0.2s ease",
+                "&:hover": { backgroundColor: hoverBackgroundColor },
               }}
             >
               <span>{item.title}</span>
               <span
                 css={{
-                  transition: 'transform 0.2s ease',
-                  transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                  transition: "transform 0.2s ease",
+                  transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
                   fontSize: t.fontSize[12],
                 }}
               >

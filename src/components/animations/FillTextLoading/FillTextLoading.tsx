@@ -8,6 +8,10 @@ export type FillTextLoadingProps = {
 const easeInOutCubic = (t: number) =>
   t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 
+/**
+ * FillTextLoading component that renders a label whose text fills in with color to indicate loading progress.
+ * */
+
 export const FillTextLoading = ({
   label = "Loading",
   cycleMs = 2200,

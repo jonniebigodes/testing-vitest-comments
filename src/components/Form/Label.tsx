@@ -18,6 +18,10 @@ export interface LabelProps {
   children: ReactNode;
 }
 
+/**
+ * Label component that renders a styled label element associated with a form control.
+ * */
+
 const Label = ({ htmlFor, inverted = false, children }: LabelProps) => {
   const t = useTheme();
   const textColor = inverted ? t.color.white : t.color.slate700;

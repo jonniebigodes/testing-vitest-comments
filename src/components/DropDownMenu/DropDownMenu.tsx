@@ -28,6 +28,10 @@ export interface DropDownMenuProps {
   onSelect?: (item: string) => void;
 }
 
+/**
+ * DropDownMenu component that renders a toggle button revealing a list of selectable options.
+ * */
+
 const DropDownMenu = ({
   color: customColor,
   label,

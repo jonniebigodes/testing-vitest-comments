@@ -6,6 +6,10 @@ export type LoadingRipplesProps = {
   color?: string;
 };
 
+/**
+ * LoadingRipples component that renders concentric rings expanding and fading outward to indicate loading.
+ * */
+
 export const LoadingRipples = ({
   ringCount = 3,
   cycleMs = 2400,
