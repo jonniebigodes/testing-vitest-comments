@@ -23,6 +23,10 @@ const easeBounceOut = (t: number) => {
   return n1 * u * u + 0.984375;
 };
 
+/**
+ * BounceElevation component that animates a box lifting and falling with a bouncy landing effect.
+ * */
+
 export const BounceElevation = ({
   liftPx = 36,
   cycleMs = 1400,

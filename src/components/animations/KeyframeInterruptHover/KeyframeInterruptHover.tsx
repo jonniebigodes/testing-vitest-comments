@@ -8,6 +8,10 @@ export type KeyframeInterruptHoverProps = {
   interruptCycleMs?: number;
 };
 
+/**
+ * KeyframeInterruptHover component that demonstrates a remounting keyframe animation alongside a bar whose width transition is repeatedly interrupted and retargeted.
+ * */
+
 export const KeyframeInterruptHover = ({
   keyframeCycleMs = 1600,
   interruptCycleMs = 550,

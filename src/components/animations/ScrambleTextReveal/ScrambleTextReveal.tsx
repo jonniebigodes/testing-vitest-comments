@@ -13,6 +13,10 @@ export type ScrambleTextRevealProps = {
   scrambleTickMs?: number;
 };
 
+/**
+ * ScrambleTextReveal component that cycles through a list of words, revealing each one through a scrambling character animation.
+ * */
+
 export const ScrambleTextReveal = ({
   words: wordsProp,
   wordHoldMs = 2200,

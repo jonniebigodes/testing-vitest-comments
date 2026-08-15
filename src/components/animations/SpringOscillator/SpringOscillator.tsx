@@ -10,6 +10,10 @@ type SpringConfig = {
   stiffness: number;
 };
 
+/**
+ * SpringOscillator component that renders a circular dot sliding back and forth inside a track using spring physics.
+ * */
+
 export const SpringOscillator = ({ spanPx = 56 }: SpringOscillatorProps) => {
   const [x, setX] = useState(0);
 

@@ -25,6 +25,10 @@ export interface CollapsibleProps {
   children?: ReactNode;
 }
 
+/**
+ * Collapsible component that toggles the visibility of its content behind a labeled trigger button.
+ * */
+
 const Collapsible = ({
   open,
   onOpenChange,

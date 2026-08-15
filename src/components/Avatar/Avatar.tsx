@@ -32,6 +32,10 @@ export interface AvatarProps {
   rootProps?: Omit<ComponentPropsWithoutRef<"div">, "id">;
 }
 
+/**
+ * Avatar component that displays a user image and falls back to initials text when the image is loading or fails to load.
+ * */
+
 export const Avatar = ({
   src,
   alt,

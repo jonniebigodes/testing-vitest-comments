@@ -27,6 +27,10 @@ export interface FooterProps {
   onLinkClick?: (link: string) => void;
 }
 
+/**
+ * Footer component that displays a copyright label alongside an optional row of navigation links.
+ * */
+
 const Footer = ({
   color: customColor,
   label = "© 2025 Company Name. All rights reserved.",

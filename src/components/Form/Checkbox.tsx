@@ -13,6 +13,10 @@ export interface CheckboxProps {
   children?: ReactNode;
 }
 
+/**
+ * Checkbox component that renders a styled, accessible checkbox input with an optional label.
+ * */
+
 const Checkbox = ({
   checked,
   onCheckedChange,

@@ -5,6 +5,10 @@ export type BasicAnimationProps = {
   widthMaxPx?: number;
 };
 
+/**
+ * BasicAnimation component that renders a bar whose width transitions to a new random value at a set interval.
+ * */
+
 export const BasicAnimation = ({
   tickMs = 3000,
   widthMaxPx = 350,

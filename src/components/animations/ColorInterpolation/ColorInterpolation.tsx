@@ -38,6 +38,10 @@ const interpolateColor = (
   return colors[0];
 };
 
+/**
+ * ColorInterpolation component that animates a box smoothly transitioning through a sequence of colors.
+ * */
+
 export const ColorInterpolation = ({
   durationMs = 3200,
 }: ColorInterpolationProps) => {

@@ -35,6 +35,10 @@ function parseTimeString(timeString: string): TimeValue {
   };
 }
 
+/**
+ * TimeField component that renders a time input with an optional label and a button to clear the value.
+ * */
+
 export default function TimeField({
   value,
   onValueChange,

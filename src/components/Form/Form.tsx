@@ -19,6 +19,10 @@ export interface FormProps
   children: ReactNode;
 }
 
+/**
+ * Form component that renders a styled form container laying out its children in a column.
+ * */
+
 const Form = ({
   inverted = false,
   gap,
